@@ -3,11 +3,11 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const app = express();
-const port = 3000;
-
+const port = 4000;
+    
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.status(200).json('Welcome, your app is working well');
 })
 
