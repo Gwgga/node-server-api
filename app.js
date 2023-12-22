@@ -8,7 +8,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send('[OK] Api Node Server');
+    res.status(200).json('Welcome, your app is working well');
 })
 
 app.post('/pushover/avizz', (req, res) => {
